@@ -2,9 +2,8 @@ import os
 import re
 import numpy as np
 import pandas as pd
-
-from iFinDPy import THS_iFinDLogin, THS_DataStatistics
 from typing import List
+from iFinDPy import THS_iFinDLogin, THS_DataStatistics
 
 
 class CSecIdGrp(object):
