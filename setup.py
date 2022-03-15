@@ -20,11 +20,3 @@ EQUITY_SECURITY_ID_DIR = os.path.join(EQUITY_DIR, "security_id")
 EQUITY_SECURITY_MKT_DATA_DIR = os.path.join(EQUITY_DIR, "security_mkt_data")
 
 SEP_LINE = "=" * 120
-
-THS_ACCOUNT_TABLE = {
-    "huxo": {
-        "account_id": "htzq12157",
-        "password": "247260",
-        "reservation": 70000,
-    },
-}

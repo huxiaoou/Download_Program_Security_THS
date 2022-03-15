@@ -6,15 +6,16 @@ from CustomFunsSSE import download_sse_public_info, parse_sse_public_info
 
 download_date = sys.argv[1]
 user_name = sys.argv[2]
-skip_when_exists = sys.argv[3].upper() in ["T", "TRUE"]
+user_pwd = sys.argv[3]
+skip_when_exists = sys.argv[4].upper() in ["T", "TRUE"]
 
 # --- load calendar
 cne_calendar = CCalendar(SKYRIM_CONST_CALENDAR_PATH)
 
 # --- account
 run_account = CTHSAccount(
-    t_account_id=THS_ACCOUNT_TABLE[user_name]["account_id"],
-    t_password=THS_ACCOUNT_TABLE[user_name]["password"],
+    t_account_id=user_name,
+    t_password=user_pwd,
 )
 run_account.log_in()
 run_account.inquire_and_display_quotes()
