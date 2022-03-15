@@ -25,4 +25,4 @@ for data_type in ["security_id", "security_mkt_data"]:
         else:
             copy(src=src_path, dst=dst_path)
 
-    print("| {2} | {1} | All data of {0} copied to portal |".format(data_type, trade_date, dt.datetime.now()))
+    print("| {2} | {1} | All data of {0:>24s} copied to portal |".format(data_type, trade_date, dt.datetime.now()))
