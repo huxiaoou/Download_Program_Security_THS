@@ -5,8 +5,8 @@ src_root_dir = EQUITY_DIR
 dst_root_dir = os.path.join("C:\\", "Users", "Administrator", "OneDrive", "文档", "Trading", "Database", "Equity")
 
 trade_date = sys.argv[1]
-trade_year = trade_date[0:4]
 
+trade_year = trade_date[0:4]
 for data_type in ["security_id", "security_mkt_data"]:
     src_dir = os.path.join(src_root_dir, data_type, trade_year, trade_date)
     dst_dir = os.path.join(dst_root_dir, data_type, trade_year, trade_date)
@@ -21,7 +21,7 @@ for data_type in ["security_id", "security_mkt_data"]:
         src_path = os.path.join(src_dir, f)
         dst_path = os.path.join(dst_dir, f)
         if os.path.exists(dst_path):
-            print("Error! Destination path: {} already exists at {}".format(dst_path, trade_date))
+            print("Warning! Destination path: {} already exists at {}".format(dst_path, trade_date))
         else:
             copy(src=src_path, dst=dst_path)
 

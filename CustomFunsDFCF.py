@@ -109,4 +109,4 @@ def download_forbidden_release_dfcf(t_download_date: str, t_save_root_dir: str, 
             df = df.drop(axis=1, labels=["release_date"])
             df = df.sort_index(ascending=True)
             df.to_csv(save_path, float_format="%.6f", compression="gzip", encoding="gb18030")
-            print(df)
+            # print(df)
