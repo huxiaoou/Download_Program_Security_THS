@@ -9,8 +9,8 @@ import requests
 import json
 from skyrim.whiterun import CCalendar
 from skyrim.winterhold import check_and_mkdir
-# from skyrim.configurationOffice import SKYRIM_CONST_CALENDAR_PATH
-from skyrim.configurationHome import SKYRIM_CONST_CALENDAR_PATH
+from skyrim.configurationOffice import SKYRIM_CONST_CALENDAR_PATH
+# from skyrim.configurationHome import SKYRIM_CONST_CALENDAR_PATH
 
 pd.set_option("display.width", 0)
 pd.set_option("display.float_format", "{:.2f}".format)
