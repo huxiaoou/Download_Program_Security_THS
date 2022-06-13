@@ -2,8 +2,8 @@ from setup import *
 from shutil import copy
 
 src_root_dir = EQUITY_DIR
-# dst_root_dir = os.path.join("C:\\", "Users", "Administrator", "OneDrive", "文档", "Trading", "Database", "Equity")
-dst_root_dir = os.path.join("C:\\", "Users", "huxia", "OneDrive", "文档", "Trading", "Database", "Equity")
+dst_root_dir = os.path.join("C:\\", "Users", "Administrator", "OneDrive", "文档", "Trading", "Database", "Equity")
+# dst_root_dir = os.path.join("C:\\", "Users", "huxia", "OneDrive", "文档", "Trading", "Database", "Equity")
 
 trade_date = sys.argv[1]
 
