@@ -117,24 +117,26 @@ download_forbidden_release_dfcf(
     t_skip_when_exists=skip_when_exists,
 )
 
-# public info - SZSE
+# download public info
 download_szse_public_info(
     t_download_date=download_date,
     t_save_root_dir=EQUITY_SECURITY_MKT_DATA_DIR,
     t_skip_when_exists=skip_when_exists
 )
-parse_szse_public_info(
-    t_report_date=download_date,
-    t_save_root_dir=EQUITY_SECURITY_MKT_DATA_DIR
-)
 
-# public info - SSE
 download_sse_public_info(
     t_download_date=download_date,
     t_save_root_dir=EQUITY_SECURITY_MKT_DATA_DIR,
     t_skip_when_exists=skip_when_exists
 )
+
+# parse public info
 parse_sse_public_info(
+    t_report_date=download_date,
+    t_save_root_dir=EQUITY_SECURITY_MKT_DATA_DIR
+)
+
+parse_szse_public_info(
     t_report_date=download_date,
     t_save_root_dir=EQUITY_SECURITY_MKT_DATA_DIR
 )
